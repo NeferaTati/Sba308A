@@ -11,4 +11,18 @@ function makepages(){
     const totalPages = Math.ceil(total / perPag);
 }
 //Loop time 
+for (let i = 1; i <= totalPages;  i++) {
+    const element = document.createElement("h2");
+    element.innerHTML = totalPages[i].totalPages.name;
+    
+    moveSet.appendChild(element);}
 
+    // for (let i = 1; i <= totalPages; i++) {
+    //     const button = document.createElement('button');
+    //     button.textContent = i;
+    //     button.disabled = (i === page);
+    //     button.onclick = () => search(i);
+    //     pagination.appendChild(button);
+    // }
+//event listener
+    document.getElementById('search()').addEventListener('click', () => search(1));
