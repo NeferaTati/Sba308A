@@ -32,3 +32,10 @@ The purpose of this project is to provide a straightforward example of how to bu
 API Used:
 
 "https://holidays.abstractapi.com/v1/?api_key=675e1a5ec7164b85aa5241f40c6f8552&country=US&year=2020&month=12&day=25"
+
+
+files :
+-Display.js
+-Fetchdata.js
+-main.js
+-indie.html
