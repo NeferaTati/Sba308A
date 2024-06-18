@@ -15,14 +15,42 @@ function httpGetAsync(url, callback) {
     httpGetAsync(url)
      
     /// function to make search bar and pages with data
-    
-    let page1 = 0
-    const lastpage = 6
-
-    async function searchbar( page1 = 0)
-    ///try - catch 
-    try{
+    //Url stored in url to make fetch or fetch outside of try-catch with out variable? decisions
+    function search(page = 1) {
         const query = document.getElementById('searchQuery').value;
-        fetch(`"https://holidays.abstractapi.com/v1/?api_key=675e1a5ec7164b85aa5241f40c6f8552&country=US&year=2020&month=12&day=25"
-`)
+        const url = `https://holidays.abstractapi.com/v1/?api_key=675e1a5ec7164b85aa5241f40c6f8552&country=US&year=2020&month=12&day=25`;
+    
+        try {
+            fetch(url)
+                .then(response => response.json())
+                .then(data => {
+                    displayResults(data);
+                    setupPagination(data.length, page);
+                })
+                .catch(error => console.error('Error fetching data, sorry try again ;) :', error));
+        } catch (error) {
+            console.error('Error fetching data, sorry try again ;) :', error);
+        }
     }
+//     let page1 = 0
+//     const lastpage = 6
+
+//     async function search()
+//     ///try - catch 
+//     try{
+//         const query = document.getElementById('searchQuery').value;
+//         fetch(`"https://holidays.abstractapi.com/v1/?api_key=675e1a5ec7164b85aa5241f40c6f8552&country=US&year=2020&month=12&day=25"
+// `)
+//         .then(response => response.json())
+//         .then(data => {
+//                     displayRes(data.results);
+//                         setupPagination(data.total, page);
+//         })
+//         .catch(error => console.error('Error fetching data, sowwy try again ;) :', error));
+// }}
+    
+/// display of the api data
+function displayRes(results) {
+    const gallery = document.getElementById('gallery');
+    gallery.innerHTML = results.map(item => `<div class="item">${item.name}</div>`).join('');
+}
