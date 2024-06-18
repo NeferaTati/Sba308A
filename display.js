@@ -1,3 +1,9 @@
+const perPage = 10;  // Items per page
+let currentPage = 1;
+let results = [];
+
+
+
 /// display of the api data
 function displayRes(results) {
     const gallery = document.getElementById('gallery');
@@ -11,18 +17,26 @@ function makepages(){
     const totalPages = Math.ceil(total / perPag);
 }
 //Loop time 
-for (let i = 1; i <= totalPages;  i++) {
-    const element = document.createElement("h2");
-    element.innerHTML = totalPages[i].totalPages.name;
-    
-    moveSet.appendChild(element);}
+for (let i = 1; i <= totalPages; i++) {
+    const button = document.createElement("button");
+    button.innerHTML = i;
+    button.addEventListener('click', () => {
+        currentPage = i;
+        updateDisplay();
+    });
+    pagination.appendChild(button);
+}
 
-    // for (let i = 1; i <= totalPages; i++) {
-    //     const button = document.createElement('button');
-    //     button.textContent = i;
-    //     button.disabled = (i === page);
-    //     button.onclick = () => search(i);
-    //     pagination.appendChild(button);
-    // }
-//event listener
+
+function updateDisplay() {
+const start = (currentPage - 1) * perPag;
+const end = start + perPag;
+displayRes(results.slice(start, end));
+}
+
+
+makePages();
+updateDisplay();
+
+    
     document.getElementById('search()').addEventListener('click', () => search(1));

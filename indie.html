@@ -4,25 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery Search</title>
-    <style>
-        .gallery { display: flex; flex-wrap: wrap; }
-        .item { width: 30%; margin: 6%; padding: 6%; border: 1px solid #c8aa51; }
-        .pagination { margin: 20px; }
-        .pagination button { margin: 0 5px; }
-    </style>
+<style>
+    .gallery { display: flex; flex-wrap: wrap; }
+    .item { width: 30%; margin: 6%; padding: 6%; border: 1px solid #c8aa51; }
+    .pagination { margin: 20px; }
+    .pagination button { margin: 0 5px; }
+</style>
 </head>
 <body>
-    <input type="text" id="searchQ" placeholder="Search...">
-    <button onclick="search()">Search</button>
-    <div class="gallery" id="gallery"></div>
-    <div class="pagination" id="pagination"></div>
+<input type="text" id="searchQ" placeholder="Search...">
+<button id="searchButton">Search</button>
+<div class="gallery" id="gallery"></div>
+<div class="pagination" id="pagination"></div>
 
-    
-    <script src="fetchdata.js"></script>
-    <script src="Pagination.js"></script>
-    <script src=""></script>
-</head>
-
+<script src="scripts/fetchData.js"></script>
+<script src="scripts/display.js"></script>
+<script src="scripts/main.js"></script>
 <body>
     
 </body>
