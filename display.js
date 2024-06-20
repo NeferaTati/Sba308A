@@ -20,7 +20,7 @@ export function displaywrd(data){
 
     data.forEach(element => {
         catShw +=`
-        <img src="${element.image.url}"width = "400px" height= "400px" />
+        <h5>"${element.name.url}"width = "400px" height= "400px"</h5>
         `
         
     });

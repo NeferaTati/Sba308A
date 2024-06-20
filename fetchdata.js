@@ -2,7 +2,7 @@
 
 import { display } from "./display.js";
 
-const url = "https://api.thecatapi.com/v1/breeds?limit=20";
+const url = "https://api.thecatapi.com/v1/breeds?limit=30";
 const api_key = "live_3NTTQ3aWTlMRY9r0A4cRrwciVtCao2XDppsZOtEoJ6ni0ZfMhmqmVorONIYEfSTH"
 
 //async function 
