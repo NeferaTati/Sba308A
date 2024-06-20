@@ -1,18 +1,11 @@
-import  {displayRes,makepages,updateDisplay} from "./display.js"
-import {fetchData} from "./fetchdata.js"
+//import  {makepages,updateDisplay} from "./display.js"
+import {search} from "./fetchdata.js"
 
+const form = document.getElementById("searchQ")
 
+// form.addEventListener('submit', ) 
 
-async function search(page = 1) {
-    const query = document.getElementById('searchQ').value;
-    const url = `https://holidays.abstractapi.com/v1/?api_key=675e1a5ec7164b85aa5241f40c6f8552&country=US&year=2020&month=12&day=25&q=${query}`;
-    results = await fetchData(url);
-    currentPage = page;
-    updateDisplay();
-    makepages(results.length);
-}
-
-document.getElementById('searchButton').addEventListener('click', () => search(1));
+//document.getElementById('searchButton').addEventListener('click', () => search(1));
 
 
 search();
