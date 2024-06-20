@@ -5,7 +5,7 @@ export function display(data){
 
     data.forEach(element => {
         newCat +=`
-        <img src="${element.image.url}"/>
+        <img src="${element.image.url}"width = "400px" height= "400px" />
         `
         
     });
@@ -13,42 +13,19 @@ export function display(data){
 div.innerHTML = newCat;
 }
 
+const div2 = document.getElementById("carousel")
 
-// const perPage = 10;  // Items per page
-// let currentPage = 1;
-// let results = [];
+export function displaywrd(data){
+    let newCat = "";
 
-// /// display of the api data
-// export function displayRes(results) {
-//     const gallery = document.getElementById('gallery');
-//     gallery.innerHTML = results.map(item => `<div class="item">${item.name}</div>`).join('');
-// }
-// // this will make the pages, "pagination"
+    data.forEach(element => {
+        catShw +=`
+        <img src="${element.image.url}"width = "400px" height= "400px" />
+        `
+        
+    });
 
-// export function makepages(){
-//     const pagination = document.getElementById('pagination');
-//     pagination.innerHTML = '';
-//     const totalPages = Math.ceil(total / perPage);
-// }
-// //Loop time 
-// const totalPages = []
+div2.innerHTML = catShw;
+}
 
-// for (let i = 1; i <= totalPages; i++) {
-    
-    
-//     const button = document.createElement("button");
-//     button.innerHTML = i;
-//     button.addEventListener('click', () => {
-//         currentPage = i;
-//         updateDisplay();
-//     });
-//     pagination.appendChild(button);
-// }
-
-
-// export function updateDisplay() {
-// const start = (currentPage - 1) * perPage;
-// const end = start + perPage;
-// displayRes(results.slice(start, end));
-
-// }
+// 
