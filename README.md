@@ -39,3 +39,4 @@ files :
 -Fetchdata.js
 -main.js
 -indie.html
+-styles.css
