@@ -3,155 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sterling Cat Cafe</title>
-
-    <link rel="stylesheet" href="styles.css">
-    <!-- MDBootstrap CSS                                             -->
-    <link
-        href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.css"
-        rel="stylesheet"
-    />
+    <title>Sterling Cat Adoption Center</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
 </head>
 <body>
-<header>
-    <div class="titlebox"> 
-        <section>
-        <H1>Sterling Cat Adpotion Center</H1>
-        <div id="titlebox"></div>
+    <header>
+        <div class="titlebox"> 
+            <section>
+                <h1>Sterling Cat Adoption Center</h1>
+            </section>
+        </div>
+        <div class="navbar">
+            <nav class="navbar-container container">
+                <a href="/" class="home-link">
+                    
+                </a>
+                <div id="navbar-menu" aria-labelledby="navbar-toggle">
+                    <ul class="navbar-links">
+                        <li class="navbar-item"><a class="navbar-link" href="/about">About Us</a></li>
+                        <li class="navbar-item"><a class="navbar-link" href="/api">Meet the Kitties</a></li>
+                        <li class="navbar-item"><a class="navbar-link" href="/adopt">How to adopt</a></li>
+                        <li class="navbar-item"><a class="navbar-link" href="/contact">Contact Us</a></li>
+                    </ul>
+                </div>
+            </nav>
         
-       
-    </section>
 
-    <img class="imgCat" src="runningCat.gif" alt="">
-
-    <!-- Carousel wrapper                                            -->
-    <div
-        id="carousel"
-        class="carousel slide carousel-fade"
-        data-mdb-ride="carousel"
-    >
-        <!-- Indicators -->
-        <div class="carousel-indicators">
-            <button
-                type="button"
-                data-mdb-target="#carousel"
-                data-mdb-slide-to="0"
-                class="active"
-                aria-current="true"
-                aria-label="Slide 1"
-            ></button>
-            <button
-                type="button"
-                data-mdb-target="#carousel"
-                data-mdb-slide-to="1"
-                aria-label="Slide 2"
-            ></button>
-            <button
-                type="button"
-                data-mdb-target="#carousel"
-                data-mdb-slide-to="2"
-                aria-label="Slide 3"
-            ></button>
         </div>
 
-        <!-- Inner -->
-        <div class="carousel-inner">
-            <!-- Single item -->
-            <div class="carousel-item active">
-                <img
-                    src="https://cdn2.thecatapi.com/images/0XYvRd7oD.jpg"
-                    width="700px"
-                    height="600px"
-                    class="d-block w-100"
-                    alt="a cute kitty "
-                />
-                <div class="carousel-caption">
-                    <h5>Persimmon</h5>
-                    <p>
-                        Give a local Cat a Forever Home
-                    </p>
-                </div>
+        <img class="imgCat" src="runningCat.gif" alt="Running Cat">
+
+        <!-- Carousel wrapper -->
+        <div id="carousel" class="carousel slide carousel-fade" data-mdb-ride="carousel">
+            <!-- Indicators -->
+            <div class="carousel-indicators">
+                <button type="button" data-mdb-target="#carousel" data-mdb-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-mdb-target="#carousel" data-mdb-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-mdb-target="#carousel" data-mdb-slide-to="2" aria-label="Slide 3"></button>
             </div>
 
-            <!-- Single item -->
-            <div class="carousel-item">
-                <img
-                    src="https://cdn2.thecatapi.com/images/ozEvzdVM-.jpg"
-                    width="700px"
-                    height="600px"
-                    class="d-block w-100"
-                    alt="an even cuter one"
-                />
-                <div class="carousel-caption">
-                    <h5>St.Barths</h5>
-                    <p>
-                        Kitty of the Week ! <br>
-                        St.Barths
-                    </p>
+            <!-- Inner -->
+            <div class="carousel-inner">
+                <!-- Single item -->
+                <div class="carousel-item active">
+                    <img src="https://cdn2.thecatapi.com/images/0XYvRd7oD.jpg" width="700px" height="600px" class="d-block w-100" alt="a cute kitty ">
+                    <div class="carousel-caption">
+                        <h5>Persimmon</h5>
+                        <p>Give a local Cat a Forever Home</p>
+                    </div>
+                </div>
+
+                <!-- Single item -->
+                <div class="carousel-item">
+                    <img src="https://cdn2.thecatapi.com/images/ozEvzdVM-.jpg" width="700px" height="600px" class="d-block w-100" alt="an even cuter one">
+                    <div class="carousel-caption">
+                        <h5>St.Barths</h5>
+                        <p>Kitty of the Week! <br> St.Barths</p>
+                    </div>
+                </div>
+
+                <!-- Single item -->
+                <div class="carousel-item">
+                    <img src="https://cdn2.thecatapi.com/images/hBXicehMA.jpg" width="700px" height="600px" class="d-block w-100" alt="Cliff Above a Stormy Sea">
+                    <div class="carousel-caption">
+                        <h5>Rikishi</h5>
+                        <p>WE SAVE CATS <br> 1(800)SAV-ECAT</p>
+                    </div>
                 </div>
             </div>
+            <!-- Inner -->
 
-            <!-- Single item -->
-            <div class="carousel-item">
-                <img
-                    src="https://cdn2.thecatapi.com/images/hBXicehMA.jpg"
-                    width="700px"
-                    height="600px"
-                    class="d-block w-100"
-                    alt="Cliff Above a Stormy Sea"
-                />
-                <div class="carousel-caption">
-                    <h5>Rikishi</h5>
-                    <p>
-                        WE SAVE CATS <br>
-                        1(800)SAV-ECAT 
-
-                    </p>
-                </div>
-            </div>
+            <!-- Controls -->
+            <button class="carousel-control-prev" type="button" data-mdb-target="#carousel" data-mdb-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-mdb-target="#carousel" data-mdb-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-        <!-- Inner -->
-
-        <!-- Controls -->
-        <button
-            class="carousel-control-prev"
-            type="button"
-            data-mdb-target="#carousel"
-            data-mdb-slide="prev"
-        >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-            class="carousel-control-next"
-            type="button"
-            data-mdb-target="#carousel"
-            data-mdb-slide="next"
-        >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
-    <!-- Carousel wrapper -->
-</header>
-
-<img class="imgCat" src="runningCat.gif" alt="">
+        <!-- Carousel wrapper -->
+    </header>
 
     <div id="main-ctn">
-        <style>
-            .gallery { display: flex; top: 40pt; }
-            .img { width: 30pt; height:50pt; margin: 20%; padding: 40%; border: 100px solid #c8a; }
-            .pagination { margin: 80px; }
-            .pagination button { margin: 80px;}
-        </style>
-    <div id="main-ctn"></div>
-</div>
+        <div class="gallery">
+            <!-- Gallery content -->
+        </div>
+    </div>
 
-<!-- Bootstrap JavaScript -->
-<script
-    type="text/javascript"
-    src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.js"
-></script>
-<script src="main.js" type="module"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.js"></script>
+    <script src="main.js" type="module"></script>
 </body>
 </html>

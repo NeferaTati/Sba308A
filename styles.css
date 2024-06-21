@@ -1,14 +1,13 @@
 
-.imgCat{
+.imgCat {
     z-index: 9;
-    width: 200px;
-    height: 100px;
+    width: 100px;
+    height: 50px;
     position: fixed;
     bottom: 40px;
     animation-name: CatRunning;
     animation-duration: 5s;
     animation-iteration-count: 9;
-
 }
 
 @keyframes CatRunning {
@@ -16,31 +15,52 @@
     100%{left: 100%;}
 }
 
-.titlebox{
+.titlebox {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 300;
-    font-size: 40px;
-     
-
+    font-weight: bold;
+    font-size: 70pt;
+    color: black;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 150px;
+}
+.navbar{
+    justify-content: center;
+    align-items: center;
 
 }
 
 
-.carousel-caption{
+.titlebox .imgCat {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.carousel-caption {
     font-size: 60px;
-    color: rgba(113, 106, 77, 0.678);
+    color: rgb(49, 77, 120);
+    border-color: blue;
 }
 
-
-.carousel-indicators{
-margin-top: 20px;
-color: rgb(9, 202, 137);
-
-
+.carousel-indicators {
+    margin-top: 20px;
+    color: rgba(9, 202, 138, 0.112);
 }
-.body{
+
+.body {
     background-color: blanchedalmond;
     padding: 100px;
     margin: auto;
+}
 
+.gallery {
+    margin-bottom: 30pt;
+}
+
+#main-ctn {
+    margin-top: 30pt;
 }
